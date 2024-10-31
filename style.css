@@ -1,0 +1,175 @@
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* This will add a vertical gap between formContainer and tableContainer */
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px; /* Horizontal gap for larger screens */
+    }
+}
+
+/* Form container styling */
+#formContainer {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px; /* Optional: Extra spacing for small screens */
+}
+
+
+
+#dataForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dataForm input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    background: #f7f7f7;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    text-align: center;
+}
+
+#dataForm input::placeholder {
+    color: #aaa;
+}
+
+#dataForm button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#dataForm button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Table and search container styling */
+/* Table and search container styling */
+#tableContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px; /* Adding padding to give more room around the content */
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#searchBy {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #f7f7f7;
+    color: #555;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#searchInput {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background: #f7f7f7;
+    color: #555;
+    font-size: 14px;
+    outline: none;
+    width: 150px;
+    text-align: center;
+}
+
+#searchContainer button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#searchContainer button:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+/* Table styling */
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#dataTable th, #dataTable td {
+    padding: 10px;
+    text-align: center;
+}
+
+#dataTable thead {
+    background: #0072ff;
+    color: #fff;
+}
+
+#dataTable tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#dataTable tbody tr:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+#dataTable .edit-btn, #dataTable .delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the size as needed */
+    height: 30px;
+    font-size: 16px;
+    padding: 0; /* Center the icon */
+}
+
+#dataTable .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#dataTable .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
